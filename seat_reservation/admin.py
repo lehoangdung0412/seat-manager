@@ -5,4 +5,4 @@ from . import models
 
 @admin.register(models.Seat)
 class SeatAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['code', ' is_disabled']
